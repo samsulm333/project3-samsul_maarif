@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechBlog</title>
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" crossorigin href="/project3-samsul_maarif/assets/index-C-qHgC0J.css">
+  </head>
+
+  <body class="bg-gray-100 text-gray-800 no-scrollbar">
+    <!-- NAVBAR -->
+    <header class="bg-white shadow-sm">
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="flex items-center gap-2 text-primary font-bold text-xl">
+          <i class="fa-solid fa-laptop-code"></i>
+          <div><span class="text-black">Tech</span><span>Blog</span></div>
+        </div>
+
+        <nav class="hidden md:flex gap-6 text-sm font-bold">
+          <a href="#" class="hover:text-blue-900">Home</a>
+          <a href="#" class="hover:text-blue-900">Tutorial</a>
+          <a href="#" class="hover:text-blue-900">Review</a>
+          <a href="#" class="hover:text-blue-900">Berita</a>
+          <a href="#" class="hover:text-blue-900">About</a>
+        </nav>
+
+        <div class="flex items-center gap-4">
+          <i class="fa-solid fa-magnifying-glass text-gray-600"></i>
+          <a
+            href="dashboard.html"
+            class="bg-primary text-white px-4 py-2 rounded-lg text-sm"
+          >
+            Dashboard
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="bg-indigo-700 text-white py-20">
+      <div class="max-w-4xl mx-auto text-center px-4">
+        <h1 class="text-4xl md:text-5xl font-bold">TechBlog</h1>
+        <p class="mt-4 text-blue-100">
+          Temukan artikel, tutorial, dan berita terbaru seputar dunia teknologi
+        </p>
+
+        <div class="mt-8 flex flex-col md:flex-row gap-4 justify-center">
+          <input
+            type="text"
+            placeholder="Cari artikel..."
+            class="w-full md:w-96 px-4 py-3 rounded-lg bg-white text-gray-800"
+          />
+          <button
+            class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold"
+          >
+            Cari
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORY -->
+    <section class="max-w-6xl mx-auto px-4 py-8">
+      <div class="flex flex-wrap gap-3 justify-center">
+        <button class="bg-primary text-white px-4 py-2 rounded-full text-sm">
+          Semua
+        </button>
+        <button class="bg-gray-200 px-4 py-2 rounded-full text-sm">
+          Web Development
+        </button>
+        <button class="bg-gray-200 px-4 py-2 rounded-full text-sm">
+          Mobile Dev
+        </button>
+        <button class="bg-gray-200 px-4 py-2 rounded-full text-sm">
+          AI & ML
+        </button>
+        <button class="bg-gray-200 px-4 py-2 rounded-full text-sm">
+          Cybersecurity
+        </button>
+        <button class="bg-gray-200 px-4 py-2 rounded-full text-sm">
+          Cloud Computing
+        </button>
+      </div>
+    </section>
+
+    <!-- FEATURED -->
+    <section class="max-w-6xl mx-auto px-4 pb-12">
+      <div
+        class="bg-white rounded-xl shadow-md overflow-hidden md:flex sm:block"
+      >
+        <div class="md:w-1/2 h-64 md:h-auto">
+          <img
+            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c"
+            class="w-full object-cover md:h-full"
+          />
+        </div>
+
+        <div class="p-8 md:w-1/2">
+          <span class="text-xs bg-blue-100 text-blue-600 px-3 py-1 rounded-full"
+            >Featured • 5 min read
+          </span>
+
+          <h2 class="mt-4 text-2xl font-bold">
+            Panduan Lengkap Belajar React.js untuk Pemula
+          </h2>
+
+          <p class="mt-3 text-gray-600 text-sm">
+            Mulai dari dasar hingga mahir React.js. Pelajari komponen, state,
+            props, hooks, dan buat aplikasi pertamamu.
+          </p>
+
+          <div class="flex gap-3 py-4">
+            <img
+              src="https://i.pravatar.cc/100"
+              alt="avatar"
+              class="w-10 h-10 rounded-full"
+            />
+            <div>
+              <p class="text-sm font-bold">John Doe</p>
+              <p class="text-xs text-gray-400">12 Feb 2026</p>
+            </div>
+          </div>
+          <button
+            class="mt-6 bg-primary text-white px-5 py-2 rounded-lg text-sm"
+          >
+            Baca Selengkapnya →
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARTIKEL TERBARU -->
+    <section class="max-w-6xl mx-auto px-4 pb-16">
+      <h3 class="text-xl font-semibold mb-6">Artikel Terbaru</h3>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-5">
+            <h4 class="font-bold py-3">
+              React 19 Fitur Baru yang Wajib Dicoba
+            </h4>
+            <p clas="overflow-hidden">
+              Pelajari fitur-fitur terbaru di React 19 yang akan mengubah cara
+              kita koding
+            </p>
+
+            <div class="flex gap-3 py-4 justify-between">
+              <div class="flex gap-2">
+                <img
+                  src="https://i.pravatar.cc/100"
+                  alt="avatar"
+                  class="w-10 h-10 rounded-full"
+                />
+                <p class="text-sm font-bold mt-2">John Doe</p>
+              </div>
+
+              <div>
+                <p class="text-sm text-gray-500 mt-2 px-2">5 jam lalu</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1555949963-aa79dcee981c"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-5">
+            <h4 class="font-bold py-3">Machine Learning untuk Pemula</h4>
+            <p clas="overflow-hidden">
+              Tutorial step-by-step membangun model machine learning pertamamu
+            </p>
+
+            <div class="flex gap-3 py-4 justify-between">
+              <div class="flex gap-2">
+                <img
+                  src="https://i.pravatar.cc/101"
+                  alt="avatar"
+                  class="w-10 h-10 rounded-full"
+                />
+                <p class="text-sm font-bold mt-2">Jane Smith</p>
+              </div>
+
+              <div>
+                <p class="text-sm text-gray-500 mt-2 px-2">1 hari lalu</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-5">
+            <h4 class="font-bold py-3">10 Tips Tailwind CSS</h4>
+            <p clas="overflow-hidden">
+              Tingkatkan produktifitasmu dengan tips dan trik Tailwind CSS
+            </p>
+
+            <div class="flex gap-3 py-4 justify-between">
+              <div class="flex gap-2">
+                <img
+                  src="https://i.pravatar.cc/105"
+                  alt="avatar"
+                  class="w-10 h-10 rounded-full"
+                />
+                <p class="text-sm font-bold mt-2">Mike Johnson</p>
+              </div>
+
+              <div>
+                <p class="text-sm text-gray-500 mt-2 px-2">2 Hari lalu</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POPULER MINGGU INI -->
+    <section class="max-w-6xl mx-auto px-4 pb-16">
+      <h3 class="text-xl font-semibold mb-6">Populer Minggu Ini</h3>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white rounded-xl shadow-sm p-4 flex gap-4 items-center">
+          <img
+            src="https://images.unsplash.com/photo-1605379399642-870262d3d051"
+            class="w-24 h-24 object-cover rounded-lg"
+          />
+
+          <div class="flex-1">
+            <span class="text-xs font-extrabold px-2 py-1 text-primary">
+              #1 Trending
+            </span>
+
+            <h4 class="font-bold mt-2 text-sm">
+              Cara Kerja Blockchain untuk Developer
+            </h4>
+
+            <div class="text-xs text-gray-500 mt-2 flex gap-4">
+              <span><i class="fa-regular fa-eye"></i> 12.5k views</span>
+              <span><i class="fa-regular fa-comment"></i> 45 comments</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-sm p-4 flex gap-4 items-center">
+          <img
+            src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e"
+            class="w-24 h-24 object-cover rounded-lg"
+          />
+
+          <div class="flex-1">
+            <span class="text-xs font-extrabold px-2 py-1 text-primary">
+              #2 Trending
+            </span>
+
+            <h4 class="font-bold mt-2 text-sm">
+              Database untuk Pemula: SQL vs NoSQL
+            </h4>
+
+            <div class="text-xs text-gray-500 mt-2 flex gap-4">
+              <span><i class="fa-regular fa-eye"></i> 9.8k views</span>
+              <span><i class="fa-regular fa-comment"></i> 28 comments</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-sm p-4 flex gap-4 items-center">
+          <img
+            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c"
+            class="w-24 h-24 object-cover rounded-lg"
+          />
+
+          <div class="flex-1">
+            <span class="text-xs font-extrabold px-2 py-1 text-primary">
+              #3 Trending
+            </span>
+
+            <h4 class="font-bold mt-2 text-sm">
+              Next.js vs React: Kapan Pakai yang Mana?
+            </h4>
+
+            <div class="text-xs text-gray-500 mt-2 flex gap-4">
+              <span><i class="fa-regular fa-eye"></i> 8.2k views</span>
+              <span><i class="fa-regular fa-comment"></i> 32 comments</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-sm p-4 flex gap-4 items-center">
+          <img
+            src="https://images.unsplash.com/photo-1555949963-aa79dcee981c"
+            class="w-24 h-24 object-cover rounded-lg"
+          />
+
+          <div class="flex-1">
+            <span class="text-xs font-extrabold px-2 py-1 text-primary">
+              #4 Trending
+            </span>
+
+            <h4 class="font-bold mt-2 text-sm">
+              REST API vs GraphQL: Perbandingan Lengkap
+            </h4>
+
+            <div class="text-xs text-gray-500 mt-2 flex gap-4">
+              <span><i class="fa-regular fa-eye"></i> 6.6k views</span>
+              <span><i class="fa-regular fa-comment"></i> 21 comments</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="bg-indigo-700 py-16 text-white text-center">
+      <h3 class="text-2xl font-bold">Subscribe Newsletter</h3>
+      <p class="text-blue-100 mt-2">
+        Dapatkan update artikel terbaru langsung di emailmu!
+      </p>
+
+      <div class="mt-6 flex flex-col md:flex-row gap-4 justify-center px-4">
+        <input
+          type="email"
+          placeholder="Email kamu"
+          class="px-4 py-3 rounded-lg bg-white text-gray-800 w-full md:w-80"
+        />
+        <button
+          class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold"
+        >
+          Subscribe
+        </button>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+      <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-8">
+        <div>
+          <h4 class="text-white font-semibold text-lg flex items-center gap-2">
+            <i class="fa-solid fa-laptop-code text-primary"></i>
+            <div>Tech<span class="text-primary">Blog</span></div>
+          </h4>
+          <p class="text-sm mt-3">
+            Tempatnya developer Indonesia belajar dan berbagi.
+          </p>
+        </div>
+
+        <div>
+          <h5 class="text-white font-semibold mb-3">Kategori</h5>
+          <ul class="space-y-2 text-sm">
+            <li>Web Development</li>
+            <li>Mobile Development</li>
+            <li>Machine Learning</li>
+            <li>Cloud Computing</li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="text-white font-semibold mb-3">Tautan</h5>
+          <ul class="space-y-2 text-sm">
+            <li>Tentang Kami</li>
+            <li>Tim Redaksi</li>
+            <li>Kebijakan Privasi</li>
+            <li>Kontak</li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="text-white font-semibold mb-3">Ikuti Kami</h5>
+          <div class="flex gap-4 text-lg">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-github"></i>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="text-center text-xs text-gray-500 mt-10 border-t border-gray-500 py-5 w-full"
+      >
+        © 2026 TechBlog. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
